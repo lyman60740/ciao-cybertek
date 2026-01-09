@@ -7,11 +7,12 @@ import gsap from 'gsap'
 
 // ... [TA CONFIGURATION TEAM RESTE IDENTIQUE] ...
 const teamConfig = [
-    { id: 1, path: '/models/matheo-3d.glb', name: 'Mathéo Pons', role: 'Rageux tout pipou', timeStart: 5, duration: 3, position: { x: 1.1, y: 1.6, z: 0 }, scale: 2.5, rotationY: 5.6 },
-    { id: 2, path: '/models/benjamin-3d.glb', name: 'Benjamin Planson', role: 'Comique sans pitié', timeStart: 8.5, duration: 2, position: { x: 0, y: 0, z: 0 }, scale: 6.5, rotationY: 0 },
-    { id: 3, path: '/models/lyman-3d.glb', name: 'Lyman Abid', role: 'Développeur de mêmes', timeStart: 10.5, duration: 2, position: { x: 1.6, y: 0, z: 0 }, scale: 4, rotationY: 5.4 },
-    { id: 4, path: '/models/oriane-3d.glb', name: 'Oriane Barreau', role: 'Alternante Vegan', timeStart: 13, duration: 2, position: { x: 2.2, y: 0, z: 0 }, scale: 5.5, rotationY: 5.2 },
-    { id: 5, path: '/models/shupu-3d.glb', name: 'Suphu Liu', role: 'Calculateur CSS', timeStart: 15, duration: 2, position: { x: -3.5, y: 0, z: 0 }, scale: 5, rotationY: 1.1 },
+    { id: 1, path: '/models/matheo-3d.glb', name: 'Mathéo Pons', role: 'Rageux tout pipou', timeStart: 4, duration: 2, position: { x: 1.1, y: 1.6, z: 0 }, scale: 2.5, rotationY: 5.6 },
+    { id: 2, path: '/models/benjamin-3d.glb', name: 'Benjamin Planson', role: 'Comique sans pitié', timeStart: 6, duration: 2, position: { x: 0, y: 0, z: 0 }, scale: 6.5, rotationY: 0 },
+    { id: 3, path: '/models/lyman-3d.glb', name: 'Lyman Abid', role: 'Développeur de mêmes', timeStart: 8, duration: 2, position: { x: 1.6, y: 0, z: 0 }, scale: 4, rotationY: 5.4 },
+    { id: 4, path: '/models/oriane-3d.glb', name: 'Oriane Barreau', role: 'Alternante Vegan', timeStart: 10, duration: 2, position: { x: 2.2, y: 0, z: 0 }, scale: 5.5, rotationY: 5.2 },
+    { id: 5, path: '/models/shupu-3d.glb', name: 'Suphu Liu', role: 'Calculateur CSS', timeStart: 12, duration: 2, position: { x: -3.5, y: 0, z: 0 }, scale: 5, rotationY: 1.1 },
+    { id: 6, path: '/models/jihad-3d.glb', name: 'Jihad Oujadi', role: 'Dev front qui prefere les backs', timeStart: 14, duration: 2, position: { x: 1.6, y: 0, z: 0 }, scale: 3.5, rotationY: 5.4  }
 ]
 
 /**
@@ -225,7 +226,7 @@ const alignAllModels = () => {
     }, 2000)
 
     const sorted = getSortedModels()
-    const spacing = 2.5
+    const spacing = 1.5
     const totalWidth = (sorted.length - 1) * spacing
     
     sorted.forEach((obj, i) => {
