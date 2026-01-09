@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Experience</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <video id="bg-video" playsinline style="display:none;">
+        <source src="/the-office.mp4" type="video/mp4">
+    </video>
+
+    <div id="start-screen">
+        <button id="start-btn">Démarrer le carnage ( sorry )</button>
+        <div class="loader">Chargement des modèles...</div>
+    </div>
+
+    <button id="control-btn" style="display:none;">❚❚ Pause</button>
+
+    <div id="labels-container"></div>
+    <div id="end-phrase">Merci à tous</div>
+    <canvas class="webgl"></canvas>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

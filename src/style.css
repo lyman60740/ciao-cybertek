@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Vidéo en arrière-plan */
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Remplit l'écran */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 1;
+}
+
+/* Écran de démarrage */
+#start-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white;
+    transition: opacity 0.5s;
+}
+
+#start-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: white;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: none; /* Caché tant que pas chargé */
+}
+
+/* Labels : Fixes en bas à gauche maintenant */
+#labels-container {
+        position: fixed;
+    bottom: 87px;
+    left: 20vw;
+    background: white;
+    padding: 27px;
+    display: grid; 
+    grid-template-areas: "stack";
+    z-index: 100;
+    opacity: 0; /* Caché par défaut au chargement */
+    transition: opacity 0.5s ease;
+}
+#end-phrase {
+    position: absolute;
+    /* On le place en haut pour ne pas cacher les modèles alignés en bas */
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%); /* Centrage horizontal précis */
+    
+    font-family: 'Helvetica', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    
+    /* Etat initial caché (GSAP gérera l'apparition) */
+    opacity: 0;
+    visibility: hidden; 
+    z-index: 10;
+}
+.point-label {
+    grid-area: stack; /* Tous les labels sont dans la même case */
+    text-align: left; /* Alignement texte */
+        color: black;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    opacity: 0;
+    visibility: hidden; /* Géré par GSAP autoAlpha */
+    /* Plus de transform ici */
+}
+
+.point-label h3 {
+    font-size: 3.5rem; /* Plus gros car c'est un titre fixe */
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.point-label p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    border-left: 3px solid #000000; /* Petite barre déco stylée */
+    padding-left: 15px;
+}
+/* ... Tes styles précédents ... */
+
+#control-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+#control-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
