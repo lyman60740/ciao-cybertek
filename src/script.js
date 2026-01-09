@@ -11,7 +11,7 @@ const teamConfig = [
     { id: 2, path: '/models/benjamin-3d.glb', name: 'Benjamin Planson', role: 'Comique sans pitié', timeStart: 6, duration: 2, position: { x: 0, y: 0, z: 0 }, scale: 6.5, rotationY: 0 },
     { id: 3, path: '/models/lyman-3d.glb', name: 'Lyman Abid', role: 'Développeur de mêmes', timeStart: 8, duration: 2, position: { x: 1.6, y: 0, z: 0 }, scale: 4, rotationY: 5.4 },
     { id: 4, path: '/models/oriane-3d.glb', name: 'Oriane Barreau', role: 'Alternante Vegan', timeStart: 10, duration: 2, position: { x: 2.2, y: 0, z: 0 }, scale: 5.5, rotationY: 5.2 },
-    { id: 5, path: '/models/shupu-3d.glb', name: 'Suphu Liu', role: 'Calculateur CSS', timeStart: 12, duration: 2, position: { x: -3.5, y: 0, z: 0 }, scale: 5, rotationY: 1.1 },
+    { id: 5, path: '/models/shupu-3d.glb', name: 'Shupu Liu', role: 'Calculateur CSS', timeStart: 12, duration: 2, position: { x: -3.5, y: 0, z: 0 }, scale: 5, rotationY: 1.1 },
     { id: 6, path: '/models/jihad-3d.glb', name: 'Jihad Oujadi', role: 'Dev front qui prefere les backs', timeStart: 14, duration: 2, position: { x: 1.6, y: 0, z: 0 }, scale: 3.5, rotationY: 5.4  }
 ]
 
