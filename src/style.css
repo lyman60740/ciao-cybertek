@@ -57,6 +57,10 @@ body, html {
     text-transform: uppercase;
     font-weight: bold;
     display: none; /* Caché tant que pas chargé */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px
 }
 
 /* Labels : Fixes en bas à gauche maintenant */
