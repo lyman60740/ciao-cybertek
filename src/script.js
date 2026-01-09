@@ -51,7 +51,7 @@ let masterTimeline = null
 const loadingManager = new THREE.LoadingManager(
     () => {
         loaderText.style.display = 'none'
-        startBtn.style.display = 'block'
+        startBtn.style.display = 'flex'
     },
     (itemUrl, itemsLoaded, itemsTotal) => {
         const progress = Math.round((itemsLoaded / itemsTotal) * 100)
